@@ -12,8 +12,6 @@ export declare class RmCarouselComponent implements OnInit, OnDestroy {
     autoPlay: boolean;
     autoPlaySpeed: number;
     currentSlide: number;
-    faArrowRight: import("@fortawesome/fontawesome-common-types").IconDefinition;
-    faArrowLeft: import("@fortawesome/fontawesome-common-types").IconDefinition;
     hidden: boolean;
     jumpToSlideClearTime: ReturnType<typeof setTimeout>;
     ngOnInitClearTime: ReturnType<typeof setInterval>;

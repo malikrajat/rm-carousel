@@ -1,10 +1,7 @@
 import * as i0 from '@angular/core';
 import { Component, Input } from '@angular/core';
-import * as i2 from '@fortawesome/angular-fontawesome';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import * as i1 from '@angular/common';
 import { CommonModule } from '@angular/common';
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 class RmCarouselComponent {
     constructor() {
@@ -14,8 +11,8 @@ class RmCarouselComponent {
         this.autoPlay = false;
         this.autoPlaySpeed = 3000;
         this.currentSlide = 0;
-        this.faArrowRight = faArrowRight;
-        this.faArrowLeft = faArrowLeft;
+        // faArrowRight = faArrowRight;
+        // faArrowLeft = faArrowLeft;
         this.hidden = false;
     }
     next() {
@@ -44,8 +41,8 @@ class RmCarouselComponent {
         clearInterval(this.ngOnInitClearTime);
         clearTimeout(this.jumpToSlideClearTime);
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.3", ngImport: i0, type: RmCarouselComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "17.0.0", version: "17.1.3", type: RmCarouselComponent, isStandalone: true, selector: "rm-carousel", inputs: { slides: "slides", indicatorsVisible: "indicatorsVisible", animationSpeed: "animationSpeed", autoPlay: "autoPlay", autoPlaySpeed: "autoPlaySpeed" }, ngImport: i0, template: `
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.1.4", ngImport: i0, type: RmCarouselComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "17.0.0", version: "18.1.4", type: RmCarouselComponent, isStandalone: true, selector: "rm-carousel", inputs: { slides: "slides", indicatorsVisible: "indicatorsVisible", animationSpeed: "animationSpeed", autoPlay: "autoPlay", autoPlaySpeed: "autoPlaySpeed" }, ngImport: i0, template: `
     <div class="slides">
       <div
         class="slide"
@@ -68,18 +65,14 @@ class RmCarouselComponent {
       </div>
       }
 
-      <button (click)="next()" class="nextButton">
-        <fa-icon [icon]="faArrowRight"></fa-icon>
-      </button>
-      <button (click)="previous()" class="previousButton">
-        <fa-icon [icon]="faArrowLeft"></fa-icon>
-      </button>
+      <button (click)="next()" class="nextButton">></button>
+      <button (click)="previous()" class="previousButton"><</button>
     </div>
-  `, isInline: true, styles: [":host{display:block;width:100%}:host .slides{width:100%;height:700px;border-radius:10px;overflow:hidden;position:relative}:host .slides .slide{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}:host .slides :is(.nextButton,.previousButton){position:absolute;top:50%;border:0px;background-color:transparent;font-size:30px;color:#fff}:host .slides .nextButton{right:20px}:host .slides .previousButton{left:20px}:host .slides #indicators{position:absolute;left:0;right:0;margin:auto;bottom:20px;width:200px}:host .slides #indicators .indicator{width:20px;height:20px;border-radius:50%;background-color:#fff;display:inline-block;margin:0 5px;cursor:pointer;transition:background-color .5s ease-in-out}:host .slides #indicators .indicator.active{background-color:#4f4f4f}\n"], dependencies: [{ kind: "ngmodule", type: CommonModule }, { kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }, { kind: "ngmodule", type: FontAwesomeModule }, { kind: "component", type: i2.FaIconComponent, selector: "fa-icon", inputs: ["icon", "title", "animation", "spin", "pulse", "mask", "styles", "flip", "size", "pull", "border", "inverse", "symbol", "rotate", "fixedWidth", "classes", "transform", "a11yRole"] }] }); }
+  `, isInline: true, styles: [":host{display:block;width:100%}:host .slides{width:100%;height:700px;border-radius:10px;overflow:hidden;position:relative}:host .slides .slide{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}:host .slides :is(.nextButton,.previousButton){position:absolute;top:50%;border:0px;background-color:transparent;font-size:40px;color:#fff;cursor:pointer}:host .slides .nextButton{right:20px}:host .slides .previousButton{left:20px}:host .slides #indicators{position:absolute;left:0;right:0;margin:auto;bottom:20px;width:200px}:host .slides #indicators .indicator{width:20px;height:20px;border-radius:50%;background-color:#fff;display:inline-block;margin:0 5px;cursor:pointer;transition:background-color .5s ease-in-out}:host .slides #indicators .indicator.active{background-color:#4f4f4f}\n"], dependencies: [{ kind: "ngmodule", type: CommonModule }, { kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }] }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.3", ngImport: i0, type: RmCarouselComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.1.4", ngImport: i0, type: RmCarouselComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'rm-carousel', standalone: true, imports: [CommonModule, FontAwesomeModule], template: `
+            args: [{ selector: 'rm-carousel', standalone: true, imports: [CommonModule], template: `
     <div class="slides">
       <div
         class="slide"
@@ -102,14 +95,10 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.3", ngImpor
       </div>
       }
 
-      <button (click)="next()" class="nextButton">
-        <fa-icon [icon]="faArrowRight"></fa-icon>
-      </button>
-      <button (click)="previous()" class="previousButton">
-        <fa-icon [icon]="faArrowLeft"></fa-icon>
-      </button>
+      <button (click)="next()" class="nextButton">></button>
+      <button (click)="previous()" class="previousButton"><</button>
     </div>
-  `, styles: [":host{display:block;width:100%}:host .slides{width:100%;height:700px;border-radius:10px;overflow:hidden;position:relative}:host .slides .slide{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}:host .slides :is(.nextButton,.previousButton){position:absolute;top:50%;border:0px;background-color:transparent;font-size:30px;color:#fff}:host .slides .nextButton{right:20px}:host .slides .previousButton{left:20px}:host .slides #indicators{position:absolute;left:0;right:0;margin:auto;bottom:20px;width:200px}:host .slides #indicators .indicator{width:20px;height:20px;border-radius:50%;background-color:#fff;display:inline-block;margin:0 5px;cursor:pointer;transition:background-color .5s ease-in-out}:host .slides #indicators .indicator.active{background-color:#4f4f4f}\n"] }]
+  `, styles: [":host{display:block;width:100%}:host .slides{width:100%;height:700px;border-radius:10px;overflow:hidden;position:relative}:host .slides .slide{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}:host .slides :is(.nextButton,.previousButton){position:absolute;top:50%;border:0px;background-color:transparent;font-size:40px;color:#fff;cursor:pointer}:host .slides .nextButton{right:20px}:host .slides .previousButton{left:20px}:host .slides #indicators{position:absolute;left:0;right:0;margin:auto;bottom:20px;width:200px}:host .slides #indicators .indicator{width:20px;height:20px;border-radius:50%;background-color:#fff;display:inline-block;margin:0 5px;cursor:pointer;transition:background-color .5s ease-in-out}:host .slides #indicators .indicator.active{background-color:#4f4f4f}\n"] }]
         }], propDecorators: { slides: [{
                 type: Input
             }], indicatorsVisible: [{

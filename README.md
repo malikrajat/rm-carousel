@@ -72,13 +72,14 @@ To use lazy loading, pass the carousel an array of images, as shown in the examp
 ### Version Mapping
 
 | Slider | Ng   |
-| ------ | ---- |
+|--------|------|
 | 0.0.x  | 17.x |
+| 2.x.x  | 18.x |
 
 ## Properties
 
 | name              | type    | default | description                                                      |
-| ----------------- | ------- | ------- | ---------------------------------------------------------------- |
+|-------------------|---------|---------|------------------------------------------------------------------|
 | indicatorsVisible | boolean | true    | Display circle at bottom of Carousel to go back and forth        |
 | autoPlay          | boolean | true    | When true Carousel will start automatically                      |
 | autoPlaySpeed     | number  | 3000    | Speed of images to change in slider                              |

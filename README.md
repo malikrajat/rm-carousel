@@ -76,6 +76,7 @@ To use lazy loading, pass the carousel an array of images, as shown in the examp
 | 0.0.x  | 17.x |
 | 2.x.x  | 18.x |
 | 3.x.x  | 19.x |
+| 4.x.x  | 20.x |
 
 ## Properties
 

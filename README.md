@@ -287,7 +287,7 @@ Use the [GitHub issues](https://github.com/malikrajat/rm-carousel/issues) page f
 [![npm version](https://img.shields.io/npm/v/rm-carousel.svg)](https://www.npmjs.com/package/rm-carousel)
 [![GitHub issues](https://img.shields.io/github/issues/malikrajat/rm-carousel.svg)](https://github.com/malikrajat/rm-carousel/issues)
 [![GitHub stars](https://img.shields.io/github/stars/malikrajat/rm-carousel.svg?style=social)](https://github.com/malikrajat/rm-carousel/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/malikrajat/rm-carousel/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
@@ -342,7 +342,7 @@ Need assistance? We're here to help!
 
 - [GitHub Repository](https://github.com/malikrajat/rm-carousel)
 - [npm Package](https://www.npmjs.com/package/rm-carousel)
-- [Changelog](https://github.com/malikrajat/rm-carousel/blob/main/CHANGELOG.md)
+- [CHANGELOG.md](CHANGELOG.md)
 
 ### Community
 

@@ -1,56 +1,171 @@
 {
   "name": "rm-carousel",
-  "version": "4.0.0",
-  "description": "A highly optimized and fully customizable pure angular standalone component and solution for horizontal scrolling images with lazy loading.",
+  "version": "5.0.0",
+  "description": "A lightweight, high-performance, fully customizable Angular standalone carousel component with lazy loading, virtual scrolling, touch/drag support, responsive design, and zero external dependencies — built for modern Angular (16+).",
   "keywords": [
-    "library",
-    "angularlibrary",
-    "ng",
-    "Angular",
-    "angular-native",
-    "angular-component",
-    "custom slider",
-    "slider",
-    "thumbnail",
-    "security",
-    "performance",
-    "optimization",
+    "angular",
+    "angular16",
+    "angular17",
+    "angular18",
+    "angular19",
+    "angular20",
+    "angular21",
+    "angular22",
+    "angular23",
+    "angular24",
+    "angular25",
     "carousel",
     "angular carousel",
-    "rm",
-    "Swiper",
-    "Image slider",
-    "Lazy loading",
+    "image carousel",
+    "image slider",
+    "slider",
+    "slideshow",
+    "gallery",
+    "image gallery",
+    "photo gallery",
+    "thumbnail",
+    "thumbnails",
+    "lazy loading",
+    "lazy-loading",
+    "virtual scroll",
+    "virtual scrolling",
+    "infinite scroll",
+    "touch",
+    "touch support",
+    "drag",
+    "swipe",
+    "swiper",
+    "responsive",
+    "responsive carousel",
+    "responsive slider",
+    "mobile",
+    "mobile-friendly",
+    "standalone",
+    "standalone component",
+    "angular standalone",
+    "performance",
+    "optimization",
+    "lightweight",
+    "zero dependencies",
+    "customizable",
+    "configurable",
+    "accessible",
+    "a11y",
+    "accessibility",
+    "keyboard navigation",
+    "autoplay",
+    "auto-play",
+    "loop",
+    "infinite loop",
+    "animation",
+    "transition",
+    "fade",
+    "slide",
+    "cross-fade",
+    "typescript",
+    "ng",
+    "ngx",
+    "angular component",
+    "angular library",
+    "angular-native",
+    "native angular",
+    "pure angular",
     "rm-carousel",
-    "responsive carousel"
+    "rm",
+    "rajat malik",
+    "UI component",
+    "UI library",
+    "frontend",
+    "web component",
+    "open source",
+    "MIT"
   ],
-  "peerDependencies": {
-    "@angular/common": "^20.0.1",
-    "@angular/core": "^20.0.1",
-    "@fortawesome/angular-fontawesome": "^0.14.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false,
   "author": {
     "name": "Rajat Malik",
     "email": "mr.rajatmalik@gmail.com",
-    "url": "https://www.linkedin.com/in/errajatmalik/"
+    "url": "https://www.rajatmalik.dev/"
   },
+  "contributors": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com",
+      "url": "https://www.rajatmalik.dev/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com",
+      "url": "https://www.rajatmalik.dev/"
+    }
+  ],
+  "homepage": "https://github.com/malikrajat/rm-carousel#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malikrajat/rm-carousel.git"
+    "url": "git+https://github.com/malikrajat/rm-carousel.git",
+    "directory": "projects/rm-carousel"
   },
+  "bugs": {
+    "url": "https://github.com/malikrajat/rm-carousel/issues",
+    "email": "mr.rajatmalik@gmail.com"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=16.0.0 <=26.0.0",
+    "@angular/core": ">=16.0.0 <=26.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/malikrajat"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "ng-update": {
+    "packageGroup": [
+      "rm-carousel"
+    ],
+    "migrations": "./schematics/migration-collection.json"
+  },
+  "schematics": "./schematics/collection.json",
+  "directories": {
+    "lib": "./src",
+    "doc": "./docs"
+  },
+  "packageManager": "pnpm@10.11.1",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "private": false,
+  "readme": "README.md",
   "module": "fesm2022/rm-carousel.mjs",
-  "typings": "index.d.ts",
+  "typings": "types/rm-carousel.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./index.d.ts",
+      "types": "./types/rm-carousel.d.ts",
       "default": "./fesm2022/rm-carousel.mjs"
     }
   }

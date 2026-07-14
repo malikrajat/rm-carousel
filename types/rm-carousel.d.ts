@@ -6,7 +6,7 @@ interface ISlides {
     title: string;
     description: string;
 }
-declare class RmCarousel implements OnInit, OnDestroy {
+declare class RmCarouselComponent implements OnInit, OnDestroy {
     readonly slides: _angular_core.InputSignal<ISlides[]>;
     readonly indicatorsVisible: _angular_core.InputSignal<boolean>;
     readonly animationSpeed: _angular_core.InputSignal<number>;
@@ -27,9 +27,9 @@ declare class RmCarousel implements OnInit, OnDestroy {
     goTo(index: number): void;
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: _angular_core.ɵɵFactoryDeclaration<RmCarousel, never>;
-    static ɵcmp: _angular_core.ɵɵComponentDeclaration<RmCarousel, "rm-carousel", never, { "slides": { "alias": "slides"; "required": false; "isSignal": true; }; "indicatorsVisible": { "alias": "indicatorsVisible"; "required": false; "isSignal": true; }; "animationSpeed": { "alias": "animationSpeed"; "required": false; "isSignal": true; }; "autoPlay": { "alias": "autoPlay"; "required": false; "isSignal": true; }; "autoPlaySpeed": { "alias": "autoPlaySpeed"; "required": false; "isSignal": true; }; }, {}, never, never, true, never>;
+    static ɵfac: _angular_core.ɵɵFactoryDeclaration<RmCarouselComponent, never>;
+    static ɵcmp: _angular_core.ɵɵComponentDeclaration<RmCarouselComponent, "rm-carousel", never, { "slides": { "alias": "slides"; "required": false; "isSignal": true; }; "indicatorsVisible": { "alias": "indicatorsVisible"; "required": false; "isSignal": true; }; "animationSpeed": { "alias": "animationSpeed"; "required": false; "isSignal": true; }; "autoPlay": { "alias": "autoPlay"; "required": false; "isSignal": true; }; "autoPlaySpeed": { "alias": "autoPlaySpeed"; "required": false; "isSignal": true; }; }, {}, never, never, true, never>;
 }
 
-export { RmCarousel };
+export { RmCarouselComponent };
 export type { ISlides };

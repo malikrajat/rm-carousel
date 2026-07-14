@@ -1,7 +1,7 @@
 import * as i0 from '@angular/core';
 import { input, ChangeDetectionStrategy, Component } from '@angular/core';
 
-class RmCarousel {
+class RmCarouselComponent {
     slides = input([], /* @ts-ignore */
     ...(ngDevMode ? [{ debugName: "slides" }] : /* istanbul ignore next */ []));
     indicatorsVisible = input(true, /* @ts-ignore */
@@ -78,8 +78,8 @@ class RmCarousel {
             clearTimeout(this.transitionTimer);
         }
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "22.0.2", ngImport: i0, type: RmCarousel, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "17.0.0", version: "22.0.2", type: RmCarousel, isStandalone: true, selector: "rm-carousel", inputs: { slides: { classPropertyName: "slides", publicName: "slides", isSignal: true, isRequired: false, transformFunction: null }, indicatorsVisible: { classPropertyName: "indicatorsVisible", publicName: "indicatorsVisible", isSignal: true, isRequired: false, transformFunction: null }, animationSpeed: { classPropertyName: "animationSpeed", publicName: "animationSpeed", isSignal: true, isRequired: false, transformFunction: null }, autoPlay: { classPropertyName: "autoPlay", publicName: "autoPlay", isSignal: true, isRequired: false, transformFunction: null }, autoPlaySpeed: { classPropertyName: "autoPlaySpeed", publicName: "autoPlaySpeed", isSignal: true, isRequired: false, transformFunction: null } }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "22.0.2", ngImport: i0, type: RmCarouselComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "17.0.0", version: "22.0.2", type: RmCarouselComponent, isStandalone: true, selector: "rm-carousel", inputs: { slides: { classPropertyName: "slides", publicName: "slides", isSignal: true, isRequired: false, transformFunction: null }, indicatorsVisible: { classPropertyName: "indicatorsVisible", publicName: "indicatorsVisible", isSignal: true, isRequired: false, transformFunction: null }, animationSpeed: { classPropertyName: "animationSpeed", publicName: "animationSpeed", isSignal: true, isRequired: false, transformFunction: null }, autoPlay: { classPropertyName: "autoPlay", publicName: "autoPlay", isSignal: true, isRequired: false, transformFunction: null }, autoPlaySpeed: { classPropertyName: "autoPlaySpeed", publicName: "autoPlaySpeed", isSignal: true, isRequired: false, transformFunction: null } }, ngImport: i0, template: `
     <div class="carousel-container">
       <!-- Current slide (visible) -->
       <div
@@ -116,7 +116,7 @@ class RmCarousel {
     </div>
   `, isInline: true, styles: [":host{display:block;width:100%}.carousel-container{width:100%;height:700px;border-radius:10px;overflow:hidden;position:relative}.slide{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat}.slide-current{z-index:1}.slide-next{z-index:2}.nav-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:10;border:none;background:#0000004d;color:#fff;font-size:32px;padding:12px 16px;cursor:pointer;border-radius:4px;line-height:1}.nav-btn:hover{background:#0009}.nav-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}.nav-prev{left:16px}.nav-next{right:16px}.indicators{position:absolute;bottom:20px;left:50%;transform:translate(-50%);z-index:10;display:flex;gap:8px}.dot{width:14px;height:14px;border-radius:50%;background:#fff9;cursor:pointer;transition:background-color .3s ease}.dot.active{background:#fff}\n"], changeDetection: i0.ChangeDetectionStrategy.OnPush });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "22.0.2", ngImport: i0, type: RmCarousel, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "22.0.2", ngImport: i0, type: RmCarouselComponent, decorators: [{
             type: Component,
             args: [{ selector: 'rm-carousel', changeDetection: ChangeDetectionStrategy.OnPush, imports: [], template: `
     <div class="carousel-container">
@@ -164,5 +164,5 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "22.0.2", ngImpor
  * Generated bundle index. Do not edit.
  */
 
-export { RmCarousel };
+export { RmCarouselComponent };
 //# sourceMappingURL=rm-carousel.mjs.map

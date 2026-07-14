@@ -124,11 +124,10 @@ npm install rm-carousel
 ## Quick Start
 
 ```typescript
-import { RmCarousel } from 'rm-carousel';
-import { ISlides } from 'rm-carousel';
+import { RmCarouselComponent, ISlides } from 'rm-carousel';
 
 @Component({
-  imports: [RmCarousel],
+  imports: [RmCarouselComponent],
   template: `
     <rm-carousel
       [slides]="slides"

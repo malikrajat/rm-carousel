@@ -141,17 +141,17 @@ import { RmCarouselComponent, ISlides } from 'rm-carousel';
 export class AppComponent {
   protected readonly slides: ISlides[] = [
     {
-      url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=675&fit=crop',
+      url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=675&fit=crop', // You can give, your owne path for static content from your project like '/images/image.avif', '/assets/images/image.avif'
       title: 'Mountain Landscape',
       description: 'Beautiful mountain scenery'
     },
     {
-      url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=675&fit=crop',
+      url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=675&fit=crop',  // You can give, your owne path for static content from your project like '/images/image.avif', '/assets/images/image.
       title: 'Nature Path',
       description: 'Serene nature walkway'
     },
     {
-      url: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200&h=675&fit=crop',
+      url: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200&h=675&fit=crop',  // You can give, your owne path for static content from your project like '/images/image.avif', '/assets/images/image.
       title: 'Forest View',
       description: 'Misty forest landscape'
     }
